@@ -1,24 +1,81 @@
 body{
 	background-color: #232323;
+	margin:0; /* Here we make magin zero so that 
+	we don't have that same margin available by default to body*/
 }
 h1{
 	color: white;
+	text-align: center;
+	margin: 0; /* Here we make magin zero so that
+	 we don't have that same margin available by default to h1*/
+	background-color: steelblue;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;/* this is line spacing between sentences*/
+	padding: 10px 0;
 }
 #container{
 	max-width: 600px;
-	margin:0 auto;
+	margin:20px auto;
 }
 .square{
-	width: 30%;
+	width: 28%;
 	background-color: purple;
-	padding-bottom: 25%;
+	padding-bottom: 28%;
 	float:left;
-	margin: 1.66%;	
+	margin: 1.66%;
+	border-radius: 50%;
+	/*Here we waht to transition only color so selected
+	  background-color property in transition */
+	transition: background-color 0.2s;
+	/*below two properties are browser specific webkit is for safari and moz is for mozilla*/
+	--webkit-transaition: background-color 0.2s;
+	--moz-transaition: background-color 0.2s;
+}
+#toFind{
+	font-size: 150% /*200% for h1 font size*/
 }
 #displayBar{
 	background-color: white;
 	height: 30px;
 	text-align: center;
-	color: black;
+}
+.selected{
+	background-color: steelblue;
+	color: white;
 }
 
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	/* this turn off outline when clikcing that button*/ 
+	outline: none;
+	transition: all 0.2s; /*This is transiction of property takes two
+	 arguments one what components you want to hover and
+	 how much time after which transition has to take place*/
+	 --webkit-transaition: all 0.3\2s;
+	--moz-transaition: all 0.2s;
+}
+
+#displayMessage{
+	display: inline-block;
+	width: 20%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+}
+
+button:hover {
+	background-color: steelblue;
+	color: white;
+}

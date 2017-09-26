@@ -3,23 +3,33 @@
 <head>
 	<title>Color Game</title>
 	<link rel="stylesheet" type="text/css" href="../css/colorgame.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-	<h1>RGB Color Guessing game. Guess <span id="toFind"></span></h1>
+	<h1>The
+		<br>
+		 <span id="toFind"></span>
+		 <br>
+		 Color Game
+		 <br>
+		 Guess the color!!
+		</h1>
 	
 	<div id="displayBar">		
-		<button>New Colors</button>
+		<button id="reset">New Colors</button>
 		<span id="displayMessage"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
 	</div>
 
 
 	<div id="container">
-		<div class="square">1</div>
-		<div class="square">2</div>
-		<div class="square">3</div>
-		<div class="square">4</div>
-		<div class="square">5</div>
-		<div class="square">6</div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
 	</div>
 
 </body>
